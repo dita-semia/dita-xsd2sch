@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topic id="topic_tm3_15f_f1b" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:dita-semia:xsd:ds_topic2.xsd">
+	<title>Topic2</title>
+	<body>
+		<sl>
+			<sli><ds-dummy>ds-dummy</ds-dummy></sli>
+			<sli><ds-dummy-t2>ds-dummy-t2</ds-dummy-t2></sli>
+		</sl>
+	</body>
+</topic>

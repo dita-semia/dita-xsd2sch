@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 
+	xmlns:xs	= "http://www.w3.org/2001/XMLSchema"
+	xmlns:sch	= "http://purl.oclc.org/dsdl/schematron"
+	elementFormDefault="qualified"
+	attributeFormDefault="unqualified">
+	
+	<xs:include schemaLocation="duplicatedFilenames/ds_topicConstraintMod.xsd"/>
+	
+	<xs:annotation>
+		<xs:appinfo>
+			<dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic ds-d)</dita:domainsModule>
+		</xs:appinfo>
+		<xs:documentation> </xs:documentation>
+	</xs:annotation>
+		
+	<xs:group name="ds-ph">
+		<xs:choice>
+			<xs:element ref="ds-dummy"/>
+			<xs:element ref="ds-dummy-derived"/>
+		</xs:choice>
+	</xs:group>
+	
+	
+	<xs:element name="ds-dummy">
+		<xs:annotation>
+			<xs:documentation>Dummy element (any topic).</xs:documentation>
+			<xs:appinfo>
+				<sch:report test="true()">
+					ds-dummy element: '<sch:value-of select="."/>'
+				</sch:report>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="ph.class">
+					<xs:attribute ref="class" default="+ topic/ph ds-d/ds-dummy "/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	
+	
+	<xs:element name="ds-dummy-derived">
+		<xs:annotation>
+			<xs:documentation>Derived dummy element (any topic).</xs:documentation>
+			<xs:appinfo>
+				<sch:report test="true()">
+					ds-dummy-derived element: '<sch:value-of select="."/>'
+				</sch:report>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="ph.class">
+					<xs:attribute ref="class" default="+ topic/ph ds-d/ds-dummy ds-d/ds-dummy-derived "/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	
+	
+</xs:schema>

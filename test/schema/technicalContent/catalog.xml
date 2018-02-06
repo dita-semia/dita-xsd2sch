@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+	<!-- DITA-SEMIA Technical Content Catalog -->
+	
+	<group>
+		
+		<!--Topic Constraint Moduls  -->
+		<system systemId="urn:dita-semia:xsd:ds_topic1.xsd" 			uri="xsd/ds_topic1.xsd"/>
+		<system systemId="urn:dita-semia:xsd:ds_topic2.xsd" 			uri="xsd/ds_topic2.xsd"/>
+		
+	</group>
+	
+	
+	<group>
+		
+		<!--Topic Constraint Moduls  -->
+		<uri name="urn:dita-semia:xsd:ds_topic1.xsd" 			uri="xsd/ds_topic1.xsd"/>
+		<uri name="urn:dita-semia:xsd:ds_topic2.xsd" 			uri="xsd/ds_topic2.xsd"/>
+		
+	</group>
+	
+</catalog>
